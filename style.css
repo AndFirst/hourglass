@@ -61,3 +61,16 @@ body{
 #container{
     margin: 0 auto;
 }
+@keyframes blink {
+    0%, 100% {
+      color: green;
+    }
+    50% {
+      color: red; /* Kolor migających bombek */
+    }
+  }
+  
+  .blink {
+    animation: blink 1s infinite;
+  }
+  

@@ -1,16 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Klepsydra</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wesołych Świąt Mordeczko!</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+
+    #container {
+      display: flex;
+      justify-content: space-between; /* Ustawienia, aby elementy były na przeciwnych krańcach kontenera */
+      width: 80%; /* Aby nie zajmować całej szerokości okna */
+    }
+
+    #greetings {
+      font-size: 18px;
+      text-align: left;
+      background-color:red;
+      padding: 20px;
+    }
+
+    #tree {
+      color: green;
+      font-size: 24px;
+      white-space: pre-wrap;
+      text-align: center; /* Ustawienie wyrównania z prawej strony */
+    }
+
+    h1{
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-<script src="index.js"></script>
+
 <div id="container">
-    <div id="image"></div>
+  <div id="greetings">
+    <h1>Wesołych Świąt!</h1>
+    <p>Życzę Ci żeby te Święta były wyjątkowe jak przygoda z PW. Dużo prezentów,<br>
+        więcej niż rzeczy do zrobienia, duzo odpoczynku (oby nie wiecznego) nooo i <br>
+        żeby żarcie świąteczne szło w tyłek a nie w sadło xD Zdrowia szczęścia i <br>
+        jeszcze raz pieniędzy, żebyś mogła mnie poratować w czarnej godzinie XD <br>
+        Dałem z siebie całe 40% ale choinka chyba wyszła co nie?
+    </p>
+  </div>
+
+  <div id="tree"></div>
 </div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
